@@ -7,7 +7,6 @@ import android.os.AsyncTask;
 import android.provider.MediaStore;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 
 public class LoadAlbum extends AsyncTask<String, Void, String> {
