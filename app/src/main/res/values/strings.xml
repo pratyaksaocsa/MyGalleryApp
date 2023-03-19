@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyGallery</string>
+    <string name="placeholder">placeholder</string>
 </resources>

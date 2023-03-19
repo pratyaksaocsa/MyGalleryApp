@@ -11,8 +11,8 @@ import java.util.HashMap;
 
 public class LoadAlbum extends AsyncTask<String, Void, String> {
 
-    private MainActivity mainActivity;
-    private ArrayList<HashMap<String, String>> albumList;
+    private final MainActivity mainActivity;
+    private final ArrayList<HashMap<String, String>> albumList;
 
     public LoadAlbum(MainActivity mainActivity, ArrayList<HashMap<String, String>> album) {
         this.mainActivity = mainActivity;
