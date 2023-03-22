@@ -3,6 +3,7 @@ package edu.ftiuksw.mygallery;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Build;
+import android.os.Environment;
 
 import androidx.core.app.ActivityCompat;
 
@@ -20,12 +21,14 @@ public class Function {
                     return false;
                 }
             }
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+             return Environment.isExternalStorageManager();
         }
         return true;
     }
 
     public static HashMap<String, String> mappingInbox(String album, String path, String timestamp) {
-        HashMap<String, String> map = new HashMap<String, String>();
+        HashMap<String, String> map = new HashMap<>();
         map.put(KEY_ALBUM, album);
         map.put(KEY_PATH, path);
         map.put(KEY_TIMESTAMP, timestamp);
