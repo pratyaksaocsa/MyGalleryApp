@@ -104,5 +104,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void setAdapter(AlbumAdapter adapter) {
         galleryGridView.setAdapter(adapter);
+        galleryGridView.setOnItemClickListener((adapterView, view, i, l) -> {
+
+        });
     }
 }
